@@ -40,5 +40,9 @@
   },
   "devDependencies": {
     "prettier": "^3.5.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rungrojcarrent/car-rental.git"
   }
 }
