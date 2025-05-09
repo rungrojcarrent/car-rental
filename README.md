@@ -1,4 +1,4 @@
-<div align='center'><img style="width:30%" src='https://raw.githubusercontent.com/rungrojcarrent/car-rental/main/src/images/logo/logo.png'/></div>
+<div align='center'><img style="width:30%" src='https://raw.githubusercontent.com/rungrojcarrent/car-rental/fb373a31f631a9a1d4fee5d7bcf925d6a47067c3/LogoR9W.png'/></div>
 
 ## เกี่ยวกับโครงการ
 
