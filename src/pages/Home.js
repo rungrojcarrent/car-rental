@@ -7,7 +7,6 @@ import BasicBanner from "../components/sub-components/BasicBanner";
 import ChooseUs from "../components/sub-components/ChooseUs";
 import Review from "../components/sub-components/Review";
 import Faq from "../components/sub-components/Faq";
-import Download from "../components/sub-components/Download";
 import ScrollToTop from "../components/util/ScrollToTop";
 
 export default function Home() {
@@ -21,7 +20,6 @@ export default function Home() {
       <ChooseUs />
       <Review />
       <Faq />
-      <Download />
       <ScrollToTop />
     </>
   );

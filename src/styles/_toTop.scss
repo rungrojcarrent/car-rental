@@ -4,7 +4,7 @@
 @import './mixin';
 
 .to-top {
-    background-color: $primaryColor;
+    background-color: #222; // เปลี่ยนจาก $primaryColor (ชมพู) เป็นสีเทาเข้ม
     position: fixed;
     bottom: 16px;
     right: 32px;

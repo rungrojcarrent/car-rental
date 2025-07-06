@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import Logo from '../images/logo/logo.png'
+import LogoRungroj from '../images/logo/Logo-Rungroj.png'
 
 export default function Header() {
 
@@ -9,23 +9,22 @@ export default function Header() {
   return (
     <header>
         <nav className='nav-bar'>
-            <div className='nav-bar__logo-image'>
+            <div className='nav-bar__logo-image' style={{paddingLeft:'1.5rem'}}>
                 <Link to='/'>
-                    <img src={Logo} alt="Car Rental Logo" />
+                    <img src={LogoRungroj} alt="Rungroj Logo" style={{height:'54px', width:'54px', background:'#15161b', borderRadius:'50%'}} />
                 </Link>
             </div>
 
             <div className='nav-bar__links'>
                 <NavLink to='/'>Home</NavLink>
                 <NavLink to='about'>About</NavLink>
-                <NavLink to='vehicle'>Vehicle Models</NavLink>
+                <NavLink to='vehicle'>รุ่นรถยนต์ของเรา</NavLink>
                 <NavLink to='testimonials'>Testimonials</NavLink>
-                <NavLink to='team'>Our Team</NavLink>
                 <NavLink to='contact'>Contact</NavLink>
             </div>
 
             <div className='nav-bar__buttons'>
-                <Link className='nav-bar__buttons__signIn'>Sign In</Link>
+                <Link className='nav-bar__buttons__signIn' style={{color:'#24c399'}}>Sign In</Link>
                 <Link className='nav-bar__buttons__register'>Register</Link>
             </div>
         </nav>
@@ -36,11 +35,10 @@ export default function Header() {
             <i className="fa-solid fa-xmark close-btn" onClick={() => {setActiveMenu(false)}}></i>
             <NavLink to='/' onClick={() => {setActiveMenu(false)}}>Home</NavLink>
             <NavLink to='about' onClick={() => {setActiveMenu(false)}}>About</NavLink>
-            <NavLink to='vehicle' onClick={() => {setActiveMenu(false)}}>Vehicle Models</NavLink>
+            <NavLink to='vehicle' onClick={() => {setActiveMenu(false)}}>รุ่นรถยนต์ของเรา</NavLink>
             <NavLink to='testimonials' onClick={() => {setActiveMenu(false)}}>Testimonials</NavLink>
-            <NavLink to='team' onClick={() => {setActiveMenu(false)}}>Our Team</NavLink>
             <NavLink to='contact' onClick={() => {setActiveMenu(false)}}>Contact</NavLink>
-            <Link className='mobile-signIn-btn signIn-btn'>Sign In</Link>
+            <Link className='mobile-signIn-btn signIn-btn' style={{color:'#24c399'}}>Sign In</Link>
             <Link className='mobile-signIn-btn register-btn'>Register</Link>
         </nav>
     </header>

@@ -39,16 +39,12 @@ export default function VehicleGrid() {
                     <i className='fa-solid fa-star'></i>
                   </div>
                   <div>
-                    <h3>£{car.price}</h3>
-                    <span>per day</span>
+                    <h3>฿{car.price}</h3>
+                    <span>บาท/วัน</span>
                   </div>
                 </div>
 
                 <div className='vehicle-card__details-container__middle'>
-                  <div>
-                    <i className='fa-solid fa-car-side'></i>
-                    <span>{car.mark}</span>
-                  </div>
                   <div>
                     <span>{car.doors}</span>
                     <i className="fa-solid fa-door-open"></i>

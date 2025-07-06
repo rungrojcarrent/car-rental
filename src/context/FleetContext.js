@@ -1,16 +1,5 @@
 import React, { createContext, useState } from 'react'
-import AudiImg from '../images/cars-big/audia1.jpg'
-import VwGolfImg from '../images/cars-big/golf6.jpg'
-import ToyotaImg from '../images/cars-big/toyotacamry.jpg'
-import BmwImg from '../images/cars-big/bmw320.jpg'
-import MercImg from '../images/cars-big/benz.jpg'
-import VwPassatImg from '../images/cars-big/passatcc.jpg'
-import AudiImg2 from '../images/cars-big/audia1-2.png'
-import VwGolfImg2 from '../images/cars-big/golf6-2.png'
-import ToyotaImg2 from '../images/cars-big/toyotacamry-2.png'
-import BmwImg2 from '../images/cars-big/bmw320-2.png'
-import MercImg2 from '../images/cars-big/benz-2.png'
-import VwPassatImg2 from '../images/cars-big/passatcc-2.png'
+// ...existing code...
 
 
 export const FleetArray = createContext();
@@ -19,117 +8,156 @@ export default function FleetContext({children}) {
 
   const [cars, setCars] = useState([
     {
-      name: "Audi A1 S-Line",
-      model: "A1 S-Line",
-      mark: "Audi",
-      year: 2015,
-      doors: 5,
-      ac: true,
-      transmission: "Manual",
+      name: "Honda City Turbo",
+      model: "City Turbo",
+      mark: "Honda",
+      year: 2022,
+      transmission: "Automatic",
       fuel: "Petrol",
-      price: 555,
+      price: 1000,
       id: 1,
-      image: AudiImg,
-      image2: AudiImg2
+      image: require('../images/cars-big/HondaCityTurbo-5.png'),
+      image2: require('../images/cars-big/HondaCityTurbo-5.png')
     },
     {
-      name: "VW Golf 6",
-      model: "Golf 6",
-      mark: "Volkswagen",
-      year: 2008,
-      doors: 5,
-      ac: true,
-      transmission: "Manual",
-      fuel: "Diesel",
-      price: 555,
-      id: 2,
-      image: VwGolfImg,
-      image2: VwGolfImg2
-    },
-    {
-      name: "Toyota Camry",
-      model: "Camry",
+      name: "Toyota New Yaris Sport",
+      model: "New Yaris Sport",
       mark: "Toyota",
-      year: 2013,
-      doors: 5,
-      ac: true,
+      year: 2022,
       transmission: "Automatic",
-      fuel: "Hybrid",
-      price: 999,
-      id: 3,
-      image: ToyotaImg,
-      image2: ToyotaImg2
+      fuel: "Petrol",
+      price: 800,
+      id: 2,
+      image: require('../images/cars-big/NewYarisSport-5.png'),
+      image2: require('../images/cars-big/NewYarisSport-5.png')
     },
     {
-      name: "BMW 3 Series",
-      model: "BMW 320",
-      mark: "BMW",
-      year: 2013,
-      doors: 5,
-      ac: true,
+      name: "Toyota New Yaris Ativ",
+      model: "New Yaris Ativ",
+      mark: "Toyota",
+      year: 2022,
+      transmission: "Automatic",
+      fuel: "Petrol",
+      price: 1000,
+      id: 3,
+      image: require('../images/cars-big/NewYarisAtiv-5.png'),
+      image2: require('../images/cars-big/NewYarisAtiv-5.png')
+    },
+    {
+      name: "Nissan Almera Sportech",
+      model: "Almera Sportech",
+      mark: "Nissan",
+      year: 2022,
+      transmission: "Automatic",
+      fuel: "Petrol",
+      price: 800,
+      id: 4,
+      image: require('../images/cars-big/NissanAlmeraSportech-5.png'),
+      image2: require('../images/cars-big/NissanAlmeraSportech-5.png')
+    },
+    {
+      name: "Suzuki Ciaz",
+      model: "Ciaz",
+      mark: "Suzuki",
+      year: 2022,
+      transmission: "Automatic",
+      fuel: "Petrol",
+      price: 800,
+      id: 5,
+      image: require('../images/cars-big/SuzukiCiaz-5.png'),
+      image2: require('../images/cars-big/SuzukiCiaz-5.png')
+    },
+    {
+      name: "Ford Ranger Raptor",
+      model: "Ranger Raptor",
+      mark: "Ford",
+      year: 2022,
+      transmission: "Automatic",
+      fuel: "Diesel",
+      price: 2500,
+      id: 6,
+      image: require('../images/cars-big/FordRangerRaptor-2.png'),
+      image2: require('../images/cars-big/FordRangerRaptor-2.png')
+    },
+    {
+      name: "Toyota Vigo Champ",
+      model: "Vigo Champ",
+      mark: "Toyota",
+      year: 2022,
       transmission: "Manual",
       fuel: "Diesel",
-      price: 999,
-      id: 4,
-      image: BmwImg,
-      image2: BmwImg2
+      price: 2000,
+      id: 7,
+      image: require('../images/cars-big/ToyotaVigoChamp-2.png'),
+      image2: require('../images/cars-big/ToyotaVigoChamp-2.png')
     },
     {
-      name: "Mercedes-Benz GLK",
-      model: "GLK",
-      mark: "Mercedes",
-      year: 2009,
-      doors: 5,
-      ac: true,
+      name: "Toyota Veloz",
+      model: "Veloz",
+      mark: "Toyota",
+      year: 2022,
       transmission: "Automatic",
       fuel: "Petrol",
-      price: 999,
-      id: 5,
-      image: MercImg,
-      image2: MercImg2
+      price: 1800,
+      id: 8,
+      image: require('../images/cars-big/ToyotaVeloz-2.png'),
+      image2: require('../images/cars-big/ToyotaVeloz-2.png')
     },
     {
-      name: "VW Passat CC",
-      model: "Passat",
-      mark: "Volkswagen",
-      year: 2010,
-      doors: 5,
-      ac: true,
+      name: "Mitsubishi Pajero Sport Elite Edition",
+      model: "Pajero Sport Elite Edition",
+      mark: "Mitsubishi",
+      year: 2022,
+      transmission: "Automatic",
+      fuel: "Diesel",
+      price: 2200,
+      id: 9,
+      image: require('../images/cars-big/PajeroSportEliteEdition-2.png'),
+      image2: require('../images/cars-big/PajeroSportEliteEdition-2.png')
+    },
+    {
+      name: "Mitsubishi Cross",
+      model: "Cross",
+      mark: "Mitsubishi",
+      year: 2022,
       transmission: "Automatic",
       fuel: "Petrol",
-      price: 999,
-      id: 6,
-      image: VwPassatImg,
-      image2: VwPassatImg2
+      price: 1800,
+      id: 10,
+      image: require('../images/cars-big/MitsubishiCross-5.png'),
+      image2: require('../images/cars-big/MitsubishiCross-5.png')
+    },
+    {
+      name: "Mitsubishi Xpander",
+      model: "Xpander",
+      mark: "Mitsubishi",
+      year: 2018,
+      transmission: "Automatic",
+      fuel: "Petrol",
+      price: 1800,
+      id: 11,
+      image: require('../images/cars-big/MitsubishiXpander-5.png'),
+      image2: require('../images/cars-big/MitsubishiXpander-5.png')
+    },
+    {
+      name: "Isuzu MU-X",
+      model: "MU-X",
+      mark: "Isuzu",
+      year: 2022,
+      transmission: "Automatic",
+      fuel: "Diesel",
+      price: 1990,
+      id: 12,
+      image: require('../images/cars-big/IsuzuMUX-1.png'),
+      image2: require('../images/cars-big/IsuzuMUX-1.png')
     },
   ])
 
   const [ rentalLocations, setRentalLocations ] = useState(
     [
-      {
-        location: 'อุดรธานี',
-        id: 1
-      },
-      {
-        location: 'ขอนแก่น',
-        id: 2
-      },
-      {
-        location: 'หนองคาย',
-        id: 3
-      },
-      {
-        location: 'บึงกาฬ',
-        id: 4
-      },
-      {
-        location: 'หนองบัวลำภู',
-        id: 5
-      },
-      {
-        location: 'สกลนคร',
-        id: 6
-      },
+      { location: 'สำนักงานใหญ่ รถเช่าอุดรธานีรุ่งโรจน์คาร์เร้นท์', id: 1 },
+      { location: 'สาขาสนามบิน รถเช่าอุดรธานีรุ่งโรจน์คาร์เร้น', id: 2 },
+      { location: 'อื่นๆ', id: 3 },
     ]
   )
 

@@ -9,7 +9,7 @@ export default function Vehicle() {
 
   return (
     <>
-      <SubPageBanner pageTitle={url} additionalEndText='models' />
+      <SubPageBanner pageTitle={url} additionalEndText='รุ่นรถยนต์' />
       <VehicleGrid />
     </>
   )

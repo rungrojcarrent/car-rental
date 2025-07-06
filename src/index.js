@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './dist/css/main.css';
+import './styles/theme.css';
+import './styles/tailwind.css';
 import App from './App';
 import FleetContext from './context/FleetContext';
 import SelectedCarContext from './context/SelectedCarContext';

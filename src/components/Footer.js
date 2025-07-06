@@ -1,55 +1,36 @@
 import React from 'react'
-import { Link } from "react-router-dom"
+import BackToTopBtn from './BackToTopBtn'
 
 export default function Footer() {
   return (
-    <footer className='footer-section'>
-      <div className='footer-section__container'>
-        <div className='carRental'>
-          <h3>Car <span>Rental</span></h3>
-          <ul>
-            <li>
-              <p>We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs.</p>
-            </li>
-            <li className='contact-info'>
-              <i className="fa-solid fa-phone"></i>
-              <a className='contact-info' href="tel:086-6348619">086-6348619</a>
-            </li>
-            <li className='contact-info'>
-              <i className="fa-solid fa-envelope"></i>
-              <a className='contact-info' href="mailto:contact@carrental.com">contact@carrental.com</a>
-            </li>
-          </ul>
+    <footer style={{background:'#18191a', color:'#fff', padding:'32px 0 32px 0', fontSize:'1rem', letterSpacing:'0.01em', position:'relative'}}>
+      <div style={{maxWidth:900, margin:'0 auto', padding:'0 16px', display:'flex', flexWrap:'wrap', justifyContent:'space-between', alignItems:'flex-start', gap:'2rem'}}>
+        {/* กล่องที่อยู่ 2 กล่อง ซ้าย-ขวา ขนาดเท่ากัน */}
+        <div style={{flex:'1 1 320px', minWidth:220, background:'#232426', borderRadius:10, padding:'18px 20px', marginBottom:12, boxShadow:'0 2px 8px #18191a33', display:'flex', flexDirection:'column', alignItems:'flex-start', justifyContent:'space-between', height:'100%'}}>
+          <div style={{fontWeight:'bold', fontSize:'1.08rem', marginBottom:6}}>สำนักงานใหญ่</div>
+          <div style={{color:'#b0b3b8', fontSize:'0.97rem', marginBottom:8}}>
+            12/6 ตำบลหมูม่น เมืองอุดรธานี 41000
+          </div>
+          <div style={{marginTop:'auto', fontWeight:600}}>
+            <a href="tel:+66866348619" style={{color:'#fff', textDecoration:'none'}}>+66 86-6348619</a>
+          </div>
         </div>
-
-        <div className='company'>
-          <h3>COMPANY</h3>
-          <ul>
-            <li><Link>London</Link></li>
-            <li><Link>Careers</Link></li>
-            <li><Link>Mobile</Link></li>
-            <li><Link>Blog</Link></li>
-            <li><Link>How we work</Link></li>
-          </ul>
+        <div style={{flex:'1 1 320px', minWidth:220, background:'#232426', borderRadius:10, padding:'18px 20px', marginBottom:12, boxShadow:'0 2px 8px #18191a33', display:'flex', flexDirection:'column', alignItems:'flex-start', justifyContent:'space-between', height:'100%'}}>
+          <div style={{fontWeight:'bold', fontSize:'1.08rem', marginBottom:6}}>สาขาสนามบิน</div>
+          <div style={{color:'#b0b3b8', fontSize:'0.97rem', marginBottom:8}}>
+            25/25 หมู่ที่ 3 ซอยบ้านช้าง ตำบลหมากแข้ง อำเภอเมืองอุดรธานี 41000
+          </div>
+          <div style={{marginTop:'auto', fontWeight:600}}>
+            <a href="tel:+66866348619" style={{color:'#fff', textDecoration:'none'}}>+66 86-6348619</a>
+          </div>
         </div>
-
-        <div className='working-hours'>
-          <h3>WORKING HOURS</h3>
-          <ul>
-            <li><span className='open-day'>Mon - Fri:</span> 9:00AM - 9:00PM</li>
-            <li><span className='open-day'>Sat:</span> 9:00am - 19:00PM</li>
-            <li><span className='open-day'>Sun:</span> Closed</li>
-          </ul>
-        </div>
-
-        <div className='subscription'>
-          <h3>SUBSCRIPTION</h3>
-          <ul>
-            <li>Subscribe your email address for latest news & updates.</li>
-            <li><input type="email" placeholder='Enter Email Address'/></li>
-            <li><button>Submit</button></li>
-          </ul>
-        </div>
+      </div>
+      <div style={{textAlign:'center', color:'#b0b3b8', fontSize:'0.95rem', marginTop:12, letterSpacing:'0.01em'}}>
+        &copy; {new Date().getFullYear()} รถเช่าอุดรธานี รุ่งโรจน์ คาร์เร้นท์. All rights reserved.
+      </div>
+      {/* ปุ่ม BackToTopBtn กลับขึ้นด้านบน */}
+      <div style={{width:'100%', display:'flex', justifyContent:'center', marginTop:18}}>
+        <BackToTopBtn />
       </div>
     </footer>
   )

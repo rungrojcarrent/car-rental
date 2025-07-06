@@ -21,3 +21,63 @@
 @import './peopleGrid';
 @import './vehicleGrid';
 @import './contactForm';
+
+body, html {
+  background: linear-gradient(135deg, #15161b 0%, #181a20 60%, #23242a 100%) !important;
+  color: #f3f3f3;
+}
+
+.fleet-section, .vehicle-grid-section, .footer-section, .chooseUs-section, .about-company-section, .planTrip, .booking-section, .faq-section, .download-section {
+  background: linear-gradient(135deg, #15161b 0%, #181a20 60%, #23242a 100%) !important;
+}
+
+.footer-section {
+  border-top: 1px solid #23242a;
+  background: linear-gradient(135deg, #181a20 0%, #15161b 100%) !important;
+}
+
+.footer-social img {
+  filter: drop-shadow(0 2px 8px #23242a);
+  transition: transform 0.2s;
+}
+.footer-social img:hover {
+  transform: scale(1.08) rotate(-3deg);
+}
+
+h1, h2, h3, h4, h5, h6, .pricePerDay-container, .book-button {
+  color: #fff !important;
+}
+
+.vehicle-card, .fleet-car-container, .booking, .faq-section__container, .chooseUs-section__container, .about-company-section__container {
+  background: linear-gradient(120deg, #181a20 60%, #23242a 100%) !important;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 24px 0 #15161b;
+}
+
+.book-button, button, .nav-bar__buttons__signIn, .nav-bar__buttons__register, .to-top {
+  background: linear-gradient(90deg, #ff6bcb 0%, #ffb86c 100%) !important;
+  color: #fff !important;
+  border: none;
+  box-shadow: 0 2px 8px #23242a;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+.book-button:hover, button:hover, .nav-bar__buttons__signIn:hover, .nav-bar__buttons__register:hover, .to-top:hover {
+  filter: brightness(1.08) saturate(1.2);
+  transform: scale(1.05);
+}
+
+input, select, textarea {
+  background: #181a20 !important;
+  color: #fff !important;
+  border: 1px solid #23242a !important;
+}
+
+::-webkit-scrollbar {
+  background: #181a20;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #23242a;
+  border-radius: 4px;
+}

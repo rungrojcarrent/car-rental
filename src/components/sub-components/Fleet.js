@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { FleetArray } from '../../context/FleetContext'
 import { CarPick } from '../../context/SelectedCarContext';
+import NewYarisSportImg from '../../images/cars-big/NewYarisSport-5.png';
 
 export default function Fleet() {
 
@@ -27,50 +28,9 @@ export default function Fleet() {
           <h2>รถเช่าของเรา</h2>
           <p>เลือกจากรถที่น่าทึ่งหลากหลายรุ่นของเราเพื่อการผจญภัยหรือการเดินทางธุรกิจครั้งต่อไปของคุณ</p>
         </div>
-
-        <div className='fleet-car-container'>
-          <div className='fleet-car-container__buttons'>
-            {cars.map(car => <button className={currentCar.name === car.name ? "active":null} key={car.id} onClick={setCar} value={car.name}>{car.name}</button>)}
-          </div>
-          <div className='image-container'>
-            <img src={currentCar.image} alt={currentCar.name} />
-          </div>
-          <div className='details-container'>
-            <div className="pricePerDay-container">
-              <span>฿{currentCar.price} </span>
-            </div>
-            <div className='detail-table'>
-              <span className='table-option'>รุ่น</span>
-              <span>{currentCar.model}</span>
-            </div>
-            <div className='detail-table'>
-              <span className='table-option'>ยี่ห้อ</span>
-              <span>{currentCar.mark}</span>
-            </div>
-            <div className='detail-table'>
-              <span className='table-option'>ปี</span>
-              <span>{currentCar.year}</span>
-            </div>
-            <div className='detail-table'>
-              <span className='table-option'>จำนวนประตู</span>
-              <span>{currentCar.doors}</span>
-            </div>
-            <div className='detail-table'>
-              <span className='table-option'>เครื่องปรับอากาศ</span>
-              <span>{currentCar.ac ? "มี":"ไม่มี"}</span>
-            </div>
-            <div className='detail-table'>
-              <span className='table-option'>ระบบเกียร์</span>
-              <span>{currentCar.transmission}</span>
-            </div>
-            <div className='detail-table'>
-              <span className='table-option'>เชื้อเพลิง</span>
-              <span>{currentCar.fuel}</span>
-            </div>
-            <a href="#booking-section" onClick={chosenCar}>จองตอนนี้</a>
-          </div>
+        <div className='image-container' style={{margin: '2rem auto', maxWidth: 350, width: '100%'}}>
+          <img src={NewYarisSportImg} alt="New Yaris Sport" style={{width: '100%', maxWidth: 350, height: 'auto', borderRadius: '1rem', display: 'block', margin: '0 auto'}} />
         </div>
-
       </div>
     </section>
   )

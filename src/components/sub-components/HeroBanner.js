@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import BannerBackgroundImg from '../../images/hero/hero-bg.png';
-import BannerCar from '../../images/hero/main-car.png';
 
 export default function Hero_Banner() {
   return (
@@ -27,17 +26,17 @@ export default function Hero_Banner() {
               จองรถเลย
               <i className='fa-solid fa-circle-check'></i>
             </a>
-            <NavLink to='about'>
+            <NavLink to='vehicle'>
               ดูข้อมูลเพิ่มเติม
               <i className='fa-solid fa-angle-right'></i>
             </NavLink>
           </div>
         </div>
-        <img
-          className='container__img'
+        {/* <img
           src={BannerCar}
-          alt='รถยนต์ในแบนเนอร์'
-        />
+          alt="main car banner"
+          className="hero-banner__main-car"
+        /> */}
       </div>
     </section>
   );
