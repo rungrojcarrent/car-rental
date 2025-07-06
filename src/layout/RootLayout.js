@@ -30,19 +30,19 @@ export default function RootLayout() {
           boxShadow: '0 2px 12px rgba(0,0,0,0.08)',
           pointerEvents: 'auto',
         }}>
-          <a href="https://www.instagram.com/terminal21korat_mall/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/rungrojcarrentudon/" target="_blank" rel="noopener noreferrer">
             <img src="https://www.terminal21.co.th/korat/wp-content/uploads/2016/10/Instagram_App_Large_May2016_200.png" alt="ig_icon" width="33" height="33" />
           </a>
-          <a href="https://www.facebook.com/Terminal21Korat/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/rungrojcarrentudon/" target="_blank" rel="noopener noreferrer">
             <img src="https://www.terminal21.co.th/korat/wp-content/uploads/2016/10/Facebook-Logo.png" alt="facebook" width="33" height="33" />
           </a>
-          <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=terminal21" target="_blank" rel="noopener noreferrer">
+          <a href="https://liff.line.me/rungroj/?accountId=rungroj" target="_blank" rel="noopener noreferrer">
             <img src="https://www.terminal21.co.th/korat/wp-content/uploads/2022/01/Line-Logo.png" alt="line" width="33" height="33" />
           </a>
-          <a href="https://twitter.com/T21_Korat" target="_blank" rel="noopener noreferrer">
+          <a href="https://twitter.com/rungrojcarrentudon" target="_blank" rel="noopener noreferrer">
             <img src="https://www.terminal21.co.th/korat/wp-content/uploads/2024/01/X-twitter_logo.png" alt="twitter" width="33" height="33" />
           </a>
-          <a href="https://www.tiktok.com/@terminal21korat" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.tiktok.com/@rungrojcarrent1" target="_blank" rel="noopener noreferrer">
             <img src="https://www.terminal21.co.th/korat/wp-content/uploads/2022/02/tictok-logo-square.png" alt="tiktok" width="33" height="33" />
           </a>
           <span style={{marginLeft: '18px', color: '#222', fontSize: '0.98rem', fontWeight: 500}}>
