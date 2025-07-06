@@ -36,7 +36,7 @@ export default function RootLayout() {
           <a href="https://www.facebook.com/rungrojcarrentudon/" target="_blank" rel="noopener noreferrer">
             <img src="https://www.terminal21.co.th/korat/wp-content/uploads/2016/10/Facebook-Logo.png" alt="facebook" width="33" height="33" />
           </a>
-          <a href="https://liff.line.me/rungroj/?accountId=rungroj" target="_blank" rel="noopener noreferrer">
+          <a href="https://page.line.me/rungroj/?accountId=rungroj" target="_blank" rel="noopener noreferrer">
             <img src="https://www.terminal21.co.th/korat/wp-content/uploads/2022/01/Line-Logo.png" alt="line" width="33" height="33" />
           </a>
           <a href="https://twitter.com/rungrojcarrentudon" target="_blank" rel="noopener noreferrer">
