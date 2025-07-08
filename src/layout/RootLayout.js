@@ -30,10 +30,10 @@ export default function RootLayout() {
           boxShadow: '0 2px 12px rgba(0,0,0,0.08)',
           pointerEvents: 'auto',
         }}>
-          <a href="https://www.instagram.com/rungrojcarrentudon/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/rungroj.info/" target="_blank" rel="noopener noreferrer">
             <img src="https://www.terminal21.co.th/korat/wp-content/uploads/2016/10/Instagram_App_Large_May2016_200.png" alt="ig_icon" width="33" height="33" />
           </a>
-          <a href="https://www.facebook.com/rungrojcarrentudon/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/rungroj.info/" target="_blank" rel="noopener noreferrer">
             <img src="https://www.terminal21.co.th/korat/wp-content/uploads/2016/10/Facebook-Logo.png" alt="facebook" width="33" height="33" />
           </a>
           <a href="https://page.line.me/rungroj/?accountId=rungroj" target="_blank" rel="noopener noreferrer">
