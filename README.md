@@ -30,5 +30,6 @@
 <img src='https://github.com/rungrojcarrent/car-rental/blob/main/src/images/project-screenshot/car-rental-full-screenshot.png?raw=true'/>
 </div>
 
+### Rungroj Karn Chamnan Limited Partnership, located at 12/6 Moo 7, Mak Khaeng Subdistrict, Mueang Udon Thani District, Udon Thani Province, is the domain holder for rungroj.co.th
 <hr>
 <p align="center">© Copyright 2025 rungrojcarrent All Rights Reserved</p>
