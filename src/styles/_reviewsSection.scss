@@ -30,7 +30,7 @@
             }
 
             p {
-                color: $grayTextColor;
+                color: $BlackTextColor;
             }
         }
 
@@ -42,7 +42,7 @@
     
             &__card {
                 max-width: 33rem;
-                background-color: white;
+                background-color: Blue;
                 padding: 3rem;
                 justify-self: center;
                 box-shadow: 0 20px 40px 0 rgba(0,0,0,.08);
