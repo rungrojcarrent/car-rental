@@ -16,7 +16,7 @@
 ช่องทางการเข้าถึงแชทบอท
 คุณสามารถเข้าถึงแชทบอทของเราได้ที่:
 
-Facebook Messenger: https://facebook.com/rungroj.co.th
+Facebook Messenger: https://facebook.com/rungrojcarrental
 
 เว็บไซต์: https://rungroj.co.th
 
