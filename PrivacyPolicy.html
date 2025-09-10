@@ -3,58 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rungroj Car Rental | รถเช่าอุดรธานี รุ่งโรจน์คาร์เร้นท์</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+        header {
+            width: 100%;
+            background-color: #1e1e1e;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        header .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #00eeff;
+        }
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+        header nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .map-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+        iframe {
+            width: 90%;
+            max-width: 600px;
+            height: 450px;
+            border: 0;
+        }
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            text-align: left;
+            line-height: 1.6;
+        }
+        .content h2 {
+            color: #00eeff;
+            margin-bottom: 10px;
+        }
+        .content p {
+            margin-bottom: 10px;
+        }
+        .address {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #cccccc;
+        }
+        footer {
+            width: 100%;
+            text-align: center;
+            padding: 15px 0;
+            background-color: #1e1e1e;
+            font-size: 0.9rem;
+        }
+        footer .social-links a {
+            color: #00eeff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer .social-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    Terms and Conditions of Service
-Rungroj Car Rental, a business operator in the field of rental and leasing of private passenger cars, pickup trucks, vans, and similar compact cars, is required to collect, use, and process personal data of customers, website visitors, as well as other related parties (such as representatives, etc.) that are stored and processed through the website and other means for achieving the Company's business objectives under the basis of personal data use in accordance with the Personal Data Protection Act B.E. 2019 as detailed below:
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Rungroj Car Rental</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-Acceptance of Terms: By using this Site, you agree to be bound by these Terms of Use, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws.
+    <!-- Map -->
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d582.5765112403469!2d102.77439782917334!3d17.386655761321197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa9a4acbcf9dab67b%3A0x5a1e28a9e45e0456!2zUnVuZ3JvaiBDYXIgUmVudGFsIOC4o-C4luC5gOC4iuC5iOC4suC4reC4uOC4lOC4o-C4mOC4suC4meC4tQ!5e0!3m2!1sth!2sth!4v1756898825668!5m2!1sth!2sth" 
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 
-Use License: Permission is granted to temporarily download one copy of the materials (information or software) on the Rungroj Car Rental website for personal, non-commercial transitory viewing only.
+    <!-- Content -->
+    <div class="content">
+        <h2>Terms and Conditions of Service</h2>
+        <p>
+            Rungroj Car Rental, a business operator in the field of rental and leasing of private passenger cars, pickup trucks, vans, and similar compact cars, is required to collect, use, and process personal data of customers, website visitors, as well as other related parties (such as representatives, etc.) that are stored and processed through the website and other means for achieving the Company's business objectives under the basis of personal data use in accordance with the Personal Data Protection Act B.E. 2019 as detailed below:
+        </p>
+        <h2>Acceptance of Terms</h2>
+        <p>
+            By using this Site, you agree to be bound by these Terms of Use, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws.
+        </p>
+        <h2>Address</h2>
+        <div class="address">
+            25/25 Moo 3, Soi Baan Chang<br>
+            Mak Khaeng Subdistrict<br>
+            Mueang Udon Thani District<br>
+            Udon Thani 41000<br>
+            THAILAND<br>
+            Telephone: +66 866348619
+        </div>
+    </div>
 
-Disclaimer: The materials on the Rungroj Car Rental Website are provided "as is." Rungroj Car Rental makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties, including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
-
-Limitations: In no event shall Rungroj Car Rental or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on the Rungroj Car Rental Website, even if Rungroj Car Rental or a Rungroj Car Rental authorized representative has been notified orally or in writing of the possibility of such damage.
-
-Revisions and Errata: The materials appearing on the Rungroj Car Rental Website could include technical, typographical, or photographic errors. Rungroj Car Rental does not warrant that any of the materials on its website are accurate, complete, or current.
-
-
-
----------------------------------------------------------
-Welcome to the Rungroj Car Rental Website (the "Site"). By accessing the Site, you agree to comply with and be bound by the following terms and conditions of use. Please review these terms carefully. If you do not agree to these terms, you should not use this Site.
-
-Acceptance of Terms
-By using this Site, you agree to be bound by these Terms of Use, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws.
-
-Use License
-Permission is granted to temporarily download one copy of the materials (information or software) on the Rungroj Car Rental Website for personal, non-commercial transitory viewing only.
-
-Disclaimer
-The materials on the Rungroj Car Rental Website are provided "as is." Rungroj Car Rental makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties, including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
-
-Limitations
-In no event shall Rungroj Car Rental or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on the Rungroj Car Rental Website, even if Rungroj Car Rental or a Rungroj Car Rental authorized representative has been notified orally or in writing of the possibility of such damage.
-
-Revisions and Errata
-The materials appearing on the Rungroj Car Rental Website could include technical, typographical, or photographic errors. Rungroj Car Rental does not warrant that any of the materials on its website are accurate, complete, or current.
----------------------------------
-Address
-25/25 Moo 3, Soi Baan Chang  
-Mak Khaeng Subdistrict  
-Mueang Udon Thani District  
-Udon Thani 41000  
-THAILAND
-Telephone
-+66 866348619
----------------------------------
-
-
-
-
-
-
-
-
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        </div>
+        <div>
+            &copy; 2025 Rungroj Car Rental. All rights reserved.
+        </div>
+    </footer>
 </body>
 </html>
