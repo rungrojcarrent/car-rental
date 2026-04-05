@@ -41,8 +41,7 @@ export default function Booking() {
     }
 
     if (carPicked) {
-        // ⚡ Bolt Optimization: Use .find() instead of .filter()[0] to avoid creating unnecessary intermediate arrays and stop traversal when found
-        setCarImg(cars.find(item => item.name === carPicked).image)
+        setCarImg(cars.filter(item => item.name === carPicked)[0].image)
     }
 
     e.preventDefault();
