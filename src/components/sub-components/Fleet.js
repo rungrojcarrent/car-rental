@@ -12,8 +12,7 @@ export default function Fleet() {
   const [ selectedCar, setSelectedCar ] = useState(cars[0].name);
 
   function setCar(e) {
-    // ⚡ Bolt Optimization: Use .find() instead of .filter()[0] to stop traversal early and avoid creating an intermediate array
-    setCurrentCar(cars.find(car => car.name === e.target.value))
+    setCurrentCar(cars.filter(car => car.name === e.target.value)[0])
     setSelectedCar(e.target.value)
   }
 
