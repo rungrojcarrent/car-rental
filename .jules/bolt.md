@@ -1,0 +1,3 @@
+## 2025-01-20 - Use `.find()` instead of `.filter()[0]` for better performance
+**Learning:** In React components like `Fleet.js` and `Booking.js`, using `.filter(item => condition)[0]` to find a single element in an array is inefficient because it iterates through the entire array and creates a new array before returning the first element. Using `.find(item => condition)` stops iteration as soon as a match is found and doesn't create intermediate arrays. This is an O(n) operation that becomes O(k) where k is the index of the first match, saving memory and time.
+**Action:** Replace all instances of `.filter()[0]` with `.find()` when retrieving a single element from an array.
