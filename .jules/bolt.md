@@ -1,0 +1,3 @@
+## 2025-04-10 - Array Element Searching Optimization
+**Learning:** For this codebase, when attempting to retrieve a single element from an array based on a condition, always use `.find(condition)` instead of `.filter(condition)[0]`.
+**Action:** In future array searching operations, utilize `.find()` instead of `.filter()[0]` to immediately return upon finding the first match, preventing unnecessary creation of intermediate arrays and full array traversals.
