@@ -12,7 +12,8 @@ export default function Fleet() {
   const [ selectedCar, setSelectedCar ] = useState(cars[0].name);
 
   function setCar(e) {
-    setCurrentCar(cars.filter(car => car.name === e.target.value)[0])
+    // Optimization: using .find() is more efficient than .filter()[0] as it stops iterating once found and avoids creating a new array.
+    setCurrentCar(cars.find(car => car.name === e.target.value))
     setSelectedCar(e.target.value)
   }
 
