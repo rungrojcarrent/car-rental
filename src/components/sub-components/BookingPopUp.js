@@ -19,9 +19,21 @@ export default function BookingPopUp({ pickUpDate, dropOffDate, pickupLocation, 
   const city = useRef();
   const postcode = useRef();
 
+  const formRefs = [
+    pickUpTime,
+    dropOffTime,
+    firstName,
+    lastName,
+    phoneNumber,
+    age,
+    email,
+    address,
+    city,
+    postcode
+  ];
 
   function checkForm(e) {
-    if (!pickUpTime.current.value || !dropOffTime.current.value || !firstName.current.value || !lastName.current.value || !phoneNumber.current.value || !age.current.value || !email.current.value || !address.current.value || !city.current.value || !postcode.current.value ) {
+    if (formRefs.some((ref) => !ref.current?.value)) {
       e.preventDefault()
       setInvalidIsActive(true);
       return
@@ -34,16 +46,9 @@ export default function BookingPopUp({ pickUpDate, dropOffDate, pickupLocation, 
   }
 
   function cleanForm() {
-    pickUpTime.current.value = '';
-    dropOffTime.current.value = '';
-    firstName.current.value = '';
-    lastName.current.value = '';
-    phoneNumber.current.value = '';
-    age.current.value = '';
-    email.current.value = '';
-    address.current.value = '';
-    city.current.value = '';
-    postcode.current.value = '';
+    formRefs.forEach((ref) => {
+      if (ref.current) ref.current.value = '';
+    });
     setTimeout(() => {
       setSuccessful(false);
     }, 550);
