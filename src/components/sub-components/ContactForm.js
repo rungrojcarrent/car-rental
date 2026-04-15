@@ -28,13 +28,13 @@ export default function ContactForm() {
             </li>
             <li>
               <i className="fa-solid fa-location-dot"></i>
-              <a href={googleMapsUrl} target="_blank">รถเช่าอุดร รุ่งโรจน์คาร์เร้นท์</a>
+              <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer">รถเช่าอุดร รุ่งโรจน์คาร์เร้นท์</a>
             </li>
           </ul>
           {/* ส่วนของแผนที่ (ทำเป็นลิงก์ให้คลิกได้) */}
           <a
             href={googleMapsUrl}
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
             style={{ marginTop: '20px', display: 'block' }}
           >
             <div
