@@ -41,7 +41,7 @@ export default function Booking() {
     }
 
     if (carPicked) {
-        setCarImg(cars.filter(item => item.name === carPicked)[0].image)
+        setCarImg(cars.find(item => item.name === carPicked).image) // Optimization: Use find instead of filter[0] for better performance
     }
 
     e.preventDefault();
