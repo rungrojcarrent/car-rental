@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import { useContext, useState } from 'react';
 import { FleetArray } from '../../context/FleetContext'
 import { CarPick } from '../../context/SelectedCarContext';
 import NewYarisSportImg from '../../images/cars-big/NewYarisSport-5.png';

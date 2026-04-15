@@ -1,4 +1,3 @@
-import React from 'react'
 
 export default function SubPageBanner({ pageTitle, additionalStartText, additionalEndText }) {
 

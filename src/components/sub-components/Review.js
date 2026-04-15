@@ -1,4 +1,3 @@
-import React from 'react'
 import User1 from '../../images/testimonials/pfp1.jpg'
 import User2 from '../../images/testimonials/pfp2.jpg'
 

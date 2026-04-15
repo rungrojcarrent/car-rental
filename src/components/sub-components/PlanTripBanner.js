@@ -1,4 +1,3 @@
-import React from 'react';
 import planCar from '../../images/plan/icon1.png';
 import planOperator from '../../images/plan/icon2.png';
 import planDrive from '../../images/plan/icon3.png';

@@ -1,4 +1,3 @@
-import React from 'react'
 import BackToTopBtn from './BackToTopBtn'
 
 export default function Footer() {

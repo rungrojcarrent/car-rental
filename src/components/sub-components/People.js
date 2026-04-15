@@ -1,4 +1,3 @@
-import React from 'react'
 import Patteera from '../../images/team/1.png'
 import Peerada from '../../images/team/2.png'
 import Benjaporn from '../../images/team/3.png'

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 import aboutMain from '../../images/about/about-main.jpg'
 import icon1 from '../../images/about/icon1.png'
 import icon2 from '../../images/about/icon2.png'

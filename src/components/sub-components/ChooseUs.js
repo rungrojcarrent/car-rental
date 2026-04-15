@@ -1,4 +1,3 @@
-import React from 'react';
 import LandCruiser from "../../images/chooseUs/main.png";
 import icon1 from "../../images/chooseUs/icon1.png";
 import icon2 from "../../images/chooseUs/icon2.png";

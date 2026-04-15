@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useState } from 'react'
+import { useContext, useRef, useState } from 'react';
 import { CarPick } from '../../context/SelectedCarContext';
 import BookingPopUp from './BookingPopUp';
 import { BookingFormPopUp } from '../../context/Popup';
