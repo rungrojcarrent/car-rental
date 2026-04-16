@@ -41,7 +41,11 @@ export default function Booking() {
     }
 
     if (carPicked) {
-        setCarImg(cars.filter(item => item.name === carPicked)[0].image)
+        // Optimization: Use .find() instead of .filter()[0] to stop iterating once a match is found and avoid creating an intermediate array
+        const foundCar = cars.find(item => item.name === carPicked);
+        if (foundCar) {
+            setCarImg(foundCar.image);
+        }
     }
 
     e.preventDefault();
