@@ -12,7 +12,8 @@ export default function Fleet() {
   const [ selectedCar, setSelectedCar ] = useState(cars[0].name);
 
   function setCar(e) {
-    setCurrentCar(cars.filter(car => car.name === e.target.value)[0])
+    // ⚡ Bolt Performance Optimization: Replace .filter()[0] with .find() to exit early when match is found, improving search time
+    setCurrentCar(cars.find(car => car.name === e.target.value))
     setSelectedCar(e.target.value)
   }
 

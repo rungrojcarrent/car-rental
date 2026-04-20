@@ -1,0 +1,3 @@
+## 2024-05-24 - Replace .filter()[0] with .find()
+**Learning:** Benchmarking on a small array (approx. 12 items) confirms that '.find()' is significantly more efficient than '.filter()[0]', showing up to a 7x speed improvement for matches at the start of the array and approx. 1.5x improvement for matches at the end. '.filter()' iterates through the entire array even after finding a match, whereas '.find()' returns immediately.
+**Action:** Use '.find()' instead of '.filter()[0]' when retrieving a single element from an array for better performance and to avoid creating unnecessary intermediate arrays. Use optional chaining (e.g., '.find(...)?.property') if the match might be undefined.
