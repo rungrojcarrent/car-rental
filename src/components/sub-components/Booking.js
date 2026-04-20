@@ -41,7 +41,7 @@ export default function Booking() {
     }
 
     if (carPicked) {
-        setCarImg(cars.filter(item => item.name === carPicked)[0].image)
+        setCarImg(cars.find(item => item.name === carPicked)?.image) // bolt-performance: Replaced .filter()[0] with .find() for O(1) best-case complexity instead of O(n)
     }
 
     e.preventDefault();
