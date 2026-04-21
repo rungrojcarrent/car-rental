@@ -55,7 +55,8 @@ export default function People() {
           return (
             <div className='people-card' key={person.id}>
               <div className='image-container'>
-                <img src={person.image} alt={person.name} />
+                {/* ⚡ Bolt: Added loading="lazy" for offscreen images to improve page load speed */}
+                <img src={person.image} alt={person.name} loading="lazy" />
               </div>
 
               <div className='person-detail'>
