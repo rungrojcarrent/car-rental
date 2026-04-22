@@ -25,7 +25,10 @@ export default function VehicleGrid() {
             <div className='vehicle-card' key={car.id}>
 
               <div className='vehicle-card__image-container'>
-                <a href='/#booking-section' onClick={() => {navigateToBookingSection(car.name)}}><img src={car.image2} alt="" /></a>
+                <a href='/#booking-section' onClick={() => {navigateToBookingSection(car.name)}}>
+                  {/* ⚡ Bolt: Added loading="lazy" to defer loading off-screen images, improving initial load time and saving bandwidth */}
+                  <img src={car.image2} alt={car.name} loading="lazy" />
+                </a>
               </div>
 
               <div className='vehicle-card__details-container'>
