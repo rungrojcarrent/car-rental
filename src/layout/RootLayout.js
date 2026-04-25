@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import { Outlet } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -7,7 +7,9 @@ export default function RootLayout() {
   return (
     <>
       <Header />
-      <Outlet />
+      <Suspense fallback={<div style={{height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>Loading...</div>}>
+        <Outlet />
+      </Suspense>
       <Footer />
       {/* Social bar ฝังล่างสุดกลางจอ ขยับขึ้นจากขอบจอ และฐานโค้งน้อยลง */}
       <div style={{
