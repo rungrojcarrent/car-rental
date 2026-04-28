@@ -13,7 +13,8 @@ export default function PlanTripBanner() {
         </div>
         <div className='planTrip-container__details'>
           <div>
-            <img src={planCar} alt='ไอคอนเลือกรถ' />
+            {/* ⚡ Bolt: Add lazy loading to images below the fold */}
+            <img src={planCar} alt='ไอคอนเลือกรถ' loading='lazy' />
             <h3>เลือกรถที่ใช่</h3>
             <p>
               เรามีรถให้เลือกมากมาย ครอบคลุมทุกความต้องการในการขับขี่ของคุณ
@@ -21,14 +22,16 @@ export default function PlanTripBanner() {
             </p>
           </div>
           <div>
-            <img src={planOperator} alt='ไอคอนติดต่อเจ้าหน้าที่' />
+            {/* ⚡ Bolt: Add lazy loading to images below the fold */}
+            <img src={planOperator} alt='ไอคอนติดต่อเจ้าหน้าที่' loading='lazy' />
             <h3>ติดต่อเจ้าหน้าที่</h3>
             <p>
               เจ้าหน้าที่ของเราพร้อมให้ความช่วยเหลือและตอบทุกข้อสงสัยของคุณด้วยความเป็นมิตร
             </p>
           </div>
           <div>
-            <img src={planDrive} alt='ไอคอนขับรถ' />
+            {/* ⚡ Bolt: Add lazy loading to images below the fold */}
+            <img src={planDrive} alt='ไอคอนขับรถ' loading='lazy' />
             <h3>ออกเดินทางกันเลย!</h3>
             <p>
               ไม่ว่าคุณจะเดินทางใกล้หรือไกล เรามีรถหลากหลายประเภทพร้อมให้คุณเลือก
