@@ -1,3 +1,3 @@
-## 2024-05-18 - Replacing `.filter()[0]` with `.find()` for better performance
-**Learning:** Found multiple instances of `array.filter(condition)[0]` being used to find a single element. This is inefficient as it iterates the entire array and creates an unnecessary intermediate array, which then gets discarded.
-**Action:** Replace `array.filter(condition)[0]` with `array.find(condition)` across the codebase. Use optional chaining `?.` if accessing a property on the found object.
+## 2024-05-18 - [Route-level Code Splitting in React Router]
+**Learning:** React Router `createBrowserRouter` supports dynamic imports using `React.lazy()` for route elements. This effectively splits the bundle without requiring architectural changes, but `React.Suspense` *must* be added higher up in the component tree (e.g., inside the layout wrapping the `<Outlet />`) to handle the asynchronous loading, otherwise rendering will fail.
+**Action:** Always wrap `<Outlet />` with `<Suspense>` when applying `React.lazy()` to child routes, and ensure error boundary components (like `ErrorPage`) are kept as static imports so they are immediately available if routing fails.
