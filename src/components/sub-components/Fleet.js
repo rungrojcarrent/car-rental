@@ -30,7 +30,8 @@ export default function Fleet() {
           <p>เลือกจากรถที่น่าทึ่งหลากหลายรุ่นของเราเพื่อการผจญภัยหรือการเดินทางธุรกิจครั้งต่อไปของคุณ</p>
         </div>
         <div className='image-container' style={{margin: '2rem auto', maxWidth: 350, width: '100%'}}>
-          <img src={NewYarisSportImg} alt="New Yaris Sport" style={{width: '100%', maxWidth: 350, height: 'auto', borderRadius: '1rem', display: 'block', margin: '0 auto'}} />
+          {/* ⚡ Bolt: Added loading="lazy" to defer loading off-screen images, improving initial load time and saving bandwidth */}
+          <img src={NewYarisSportImg} alt="New Yaris Sport" style={{width: '100%', maxWidth: 350, height: 'auto', borderRadius: '1rem', display: 'block', margin: '0 auto'}} loading="lazy" />
         </div>
       </div>
     </section>

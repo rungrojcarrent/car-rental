@@ -53,7 +53,8 @@ export default function AboutCompany() {
     <section className='about-company-section'>
       <div className='about-company-section__container'>
         <div className='about-company-section__container__image-container'>
-          <img src={aboutMain} alt="about" />
+          {/* ⚡ Bolt: Added loading="lazy" to defer loading off-screen images, improving initial load time and saving bandwidth */}
+          <img src={aboutMain} alt="about" loading="lazy" />
         </div>
 
         <div className='about-company-section__container__details'>
@@ -63,21 +64,24 @@ export default function AboutCompany() {
 
           <div className='icons-section'>
             <div>
-              <img src={icon1} alt="icon1" />
+              {/* ⚡ Bolt: Added loading="lazy" to defer loading off-screen images, improving initial load time and saving bandwidth */}
+              <img src={icon1} alt="icon1" loading="lazy" />
               <span>
                 <h4 className={run && 'active'}>{numCarType}</h4>
                 <p>Car Types</p>
               </span>
             </div>
             <div>
-              <img src={icon2} alt="icon2" />
+              {/* ⚡ Bolt: Added loading="lazy" to defer loading off-screen images, improving initial load time and saving bandwidth */}
+              <img src={icon2} alt="icon2" loading="lazy" />
               <span>
                 <h4 className={run && 'active'}>{numOutlet}</h4>
                 <p>Rental Outlets</p>
               </span>
             </div>
             <div>
-              <img src={icon3} alt="icon3" />
+              {/* ⚡ Bolt: Added loading="lazy" to defer loading off-screen images, improving initial load time and saving bandwidth */}
+              <img src={icon3} alt="icon3" loading="lazy" />
               <span>
                 <h4 className={run && 'active'}>{numRepair}</h4>
                 <p>Repair Shops</p>
