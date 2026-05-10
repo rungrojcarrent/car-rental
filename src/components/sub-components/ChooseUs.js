@@ -8,7 +8,8 @@ export default function ChooseUs() {
   return (
     <section className='chooseUs-section'>
       <div className='chooseUs-section__container'>
-        <img className='hero-image' src={LandCruiser} alt="รถแลนด์ครุยเซอร์และรถรุ่นอื่นๆ" />
+        {/* ⚡ Bolt: Added loading="lazy" to defer loading off-screen images, improving initial load time and saving bandwidth */}
+        <img className='hero-image' src={LandCruiser} alt="รถแลนด์ครุยเซอร์และรถรุ่นอื่นๆ" loading="lazy" />
 
         <div className='chooseUs-details-container'>
 
@@ -21,7 +22,8 @@ export default function ChooseUs() {
 
           <div className='chooseUs-details-container__right'>
             <div>
-              <img src={icon1} alt="ไอคอนรูปรถ" />
+              {/* ⚡ Bolt: Added loading="lazy" to defer loading off-screen images, improving initial load time and saving bandwidth */}
+              <img src={icon1} alt="ไอคอนรูปรถ" loading="lazy" />
               <div className='detail'>
                 <h3 className='chooseUs-subheading'>ขับข้ามจังหวัดสบายๆ</h3>
                 <p>ยกระดับประสบการณ์การขับขี่ของคุณไปอีกขั้น ด้วยรถยนต์คุณภาพเยี่ยมของเรา พร้อมให้คุณผจญภัยไปทุกเส้นทางทั่วประเทศเลยครับ</p>
@@ -29,7 +31,8 @@ export default function ChooseUs() {
             </div>
 
             <div>
-              <img src={icon2} alt="ไอคอนรูปเงิน" />
+              {/* ⚡ Bolt: Added loading="lazy" to defer loading off-screen images, improving initial load time and saving bandwidth */}
+              <img src={icon2} alt="ไอคอนรูปเงิน" loading="lazy" />
               <div className='detail'>
                 <h3 className='chooseUs-subheading'>ราคารวมทุกอย่างแล้วนะ</h3>
                 <p>จ่ายครั้งเดียวจบ! ด้วยนโยบายราคารวมทุกอย่างของเรา สะดวกสบาย โปร่งใส ไม่มีอะไรแอบแฝงแน่นอนครับ</p>
@@ -37,7 +40,8 @@ export default function ChooseUs() {
             </div>
 
             <div>
-              <img src={icon3} alt="ไอคอนไม่มีค่าธรรมเนียมแอบแฝง" />
+              {/* ⚡ Bolt: Added loading="lazy" to defer loading off-screen images, improving initial load time and saving bandwidth */}
+              <img src={icon3} alt="ไอคอนไม่มีค่าธรรมเนียมแอบแฝง" loading="lazy" />
               <div className='detail'>
                 <h3 className='chooseUs-subheading'>ไม่มีค่าธรรมเนียมซ่อนเร้นกวนใจ</h3>
                 <p>สบายใจหายห่วงกับนโยบายไม่มีค่าธรรมเนียมแอบแฝงของเรา เราเชื่อมั่นในการให้ราคาที่ตรงไปตรงมาและซื่อสัตย์ที่สุดครับ 😊</p>

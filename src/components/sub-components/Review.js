@@ -43,7 +43,8 @@ export default function Review() {
                   <div className='review-container__card__user'>
 
                     <div className='review-container__card__user__details'>
-                      <img src={user.image} alt={user.imageAlt} />
+                      {/* ⚡ Bolt: Added loading="lazy" to defer loading off-screen images, improving initial load time and saving bandwidth */}
+                      <img src={user.image} alt={user.imageAlt} loading="lazy" />
                       <span>
                         <h4 className='reviewer-name'>{user.name}</h4>
                         <p>{user.location}</p>
