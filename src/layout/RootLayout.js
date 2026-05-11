@@ -1,13 +1,38 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import { Outlet } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+
+// ⚡ Bolt: Simple fallback component for Suspense
+const Loader = () => (
+  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '50vh' }}>
+    <div className="loader" style={{
+      border: '4px solid #f3f3f3',
+      borderTop: '4px solid #ff4d30', // brand color
+      borderRadius: '50%',
+      width: '40px',
+      height: '40px',
+      animation: 'spin 1s linear infinite'
+    }}></div>
+    <style>
+      {`
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+      `}
+    </style>
+  </div>
+);
 
 export default function RootLayout() {
   return (
     <>
       <Header />
-      <Outlet />
+      {/* ⚡ Bolt: Suspense boundary to catch lazy-loaded route components */}
+      <Suspense fallback={<Loader />}>
+        <Outlet />
+      </Suspense>
       <Footer />
       {/* Social bar ฝังล่างสุดกลางจอ ขยับขึ้นจากขอบจอ และฐานโค้งน้อยลง */}
       <div style={{
