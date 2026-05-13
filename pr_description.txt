@@ -1,0 +1,8 @@
+🎯 **What:**
+Fixed a Reverse Tabnabbing vulnerability by appending `rel="noopener noreferrer"` to all anchor tags using `target="_blank"`.
+
+⚠️ **Risk:**
+When a link opens in a new tab using `target="_blank"` without `rel="noopener noreferrer"`, the newly opened page gains partial control of the original page via the `window.opener` object. A malicious site could use this to redirect the original page to a phishing site, stealing user credentials or spreading malware.
+
+🛡️ **Solution:**
+Added the `rel="noopener noreferrer"` attribute to vulnerable `<a>` tags in `public/PrivacyPolicy.html`, `PrivacyPolicy.html`, and `src/components/sub-components/ContactForm.js`. This breaks the connection between the original and new tabs, preventing the new tab from accessing or manipulating the original page context.
