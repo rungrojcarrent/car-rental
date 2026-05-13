@@ -1,0 +1,4 @@
+🎯 **What:** Removed unused `import React` and `import React from 'react'` statements across all components, layout, context, and page files in the codebase.
+💡 **Why:** React is no longer required to be in scope when using JSX in modern React versions (React 17+). Removing these unused imports cleans up the code, reduces noise, and slightly decreases the parsing overhead.
+✅ **Verification:** Verified by checking that `CI=false npm run build` completes successfully (without introducing new warnings) and that `CI=true npm test -- --passWithNoTests` passes smoothly without errors.
+✨ **Result:** Improved maintainability and cleaner component files throughout the `src/` directory.

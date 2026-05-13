@@ -1,4 +1,3 @@
-import React from "react";
 import HeroBanner from "../components/sub-components/HeroBanner";
 import Booking from "../components/sub-components/Booking";
 import PlanTripBanner from "../components/sub-components/PlanTripBanner";

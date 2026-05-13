@@ -1,4 +1,3 @@
-import React from 'react'
 import SubPageBanner from '../components/SubPageBanner'
 import Review from '../components/sub-components/Review'
 import { useLocation } from 'react-router-dom'

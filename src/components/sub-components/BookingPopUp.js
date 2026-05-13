@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useState } from 'react'
+import { useContext, useRef, useState } from 'react';
 import { BookingFormPopUp } from '../../context/Popup'
 
 export default function BookingPopUp({ pickUpDate, dropOffDate, pickupLocation, dropOffLocation, carName, carImg }) {

@@ -1,4 +1,3 @@
-import React from 'react'
 import googlePlay from '../../images/download/googleapp.svg'
 import appStore from '../../images/download/appstore.svg'
 
